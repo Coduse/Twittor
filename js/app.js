@@ -1,8 +1,14 @@
+var url = window.location.href;
+
+var swLocation = "/Twittor/sw.js";
 
 //Inicializacion de SW
 if ( navigator.serviceWorker ) {
 //    console.log('Pruebita');
-    navigator.serviceWorker.register('/webApp_MercaDo/ClasesFernando_PWA/06-twittor/sw.js');
+    if (url.includes('localhost')) {
+        swLocation = '/webApp_MercaDo/ClasesFernando_PWA/06-twittor/sw.js';
+    }
+    navigator.serviceWorker.register(swLocation);
 }
 
 // Referencias de jQuery

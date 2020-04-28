@@ -1,5 +1,14 @@
+var url = self.location.href;
+
+var raizArchivos = "/";
+
+//Verifica raiz de archivos
+if (url.includes('localhost')) {
+    raizArchivos = '/webApp_MercaDo/ClasesFernando_PWA/06-twittor/';
+}
+
 //Importacion de funciones
-importScripts('/webApp_MercaDo/ClasesFernando_PWA/06-twittor/js/js-utils.js');
+importScripts(raizArchivos +'js/js-utils.js');
 
 // const CACHE_NAME = 'cache-1';
 const CACHE_STATIC_NAME  = 'static-v2';
@@ -9,17 +18,17 @@ const CACHE_INMUTABLE_NAME = 'inmutable-v1';
 const CACHE_DYNAMIC_LIMIT = 50;
 
 const APP_SHELL = [
-    '/',
-    '/webApp_MercaDo/ClasesFernando_PWA/06-twittor/index.html',
-    '/webApp_MercaDo/ClasesFernando_PWA/06-twittor/css/style.css',
-    '/webApp_MercaDo/ClasesFernando_PWA/06-twittor/img/favicon.ico',
-    '/webApp_MercaDo/ClasesFernando_PWA/06-twittor/img/avatars/hulk.jpg',
-    '/webApp_MercaDo/ClasesFernando_PWA/06-twittor/img/avatars/ironman.jpg',
-    '/webApp_MercaDo/ClasesFernando_PWA/06-twittor/img/avatars/spiderman.jpg',
-    '/webApp_MercaDo/ClasesFernando_PWA/06-twittor/img/avatars/thor.jpg',
-    '/webApp_MercaDo/ClasesFernando_PWA/06-twittor/img/avatars/wolverine.jpg',
-    '/webApp_MercaDo/ClasesFernando_PWA/06-twittor/js/app.js',
-    '/webApp_MercaDo/ClasesFernando_PWA/06-twittor/js/js-utils.js'
+//    '/',
+    raizArchivos + 'index.html',
+    raizArchivos + 'css/style.css',
+    raizArchivos + 'img/favicon.ico',
+    raizArchivos + 'img/avatars/hulk.jpg',
+    raizArchivos + 'img/avatars/ironman.jpg',
+    raizArchivos + 'img/avatars/spiderman.jpg',
+    raizArchivos + 'img/avatars/thor.jpg',
+    raizArchivos + 'img/avatars/wolverine.jpg',
+    raizArchivos + 'js/app.js',
+    raizArchivos + 'js/js-utils.js'
 ];
 
 const APP_SHELL_INMUTABLE = [
