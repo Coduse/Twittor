@@ -35,8 +35,8 @@ const APP_SHELL_INMUTABLE = [
     'https://fonts.googleapis.com/css?family=Quicksand:300,400',
     'https://fonts.googleapis.com/css?family=Lato:400,300',
     'https://use.fontawesome.com/releases/v5.3.1/css/all.css',
-    '/webApp_MercaDo/ClasesFernando_PWA/06-twittor/css/animate.css',
-    '/webApp_MercaDo/ClasesFernando_PWA/06-twittor/js/libs/jquery.js'
+    raizArchivos + 'css/animate.css',
+    raizArchivos + 'js/libs/jquery.js'
 ];
 
 self.addEventListener('install', e => {
