@@ -1,6 +1,6 @@
 var url = self.location.href;
 
-var raizArchivos = "/";
+var raizArchivos = "/Twittor/";
 
 //Verifica raiz de archivos
 if (url.includes('localhost')) {
