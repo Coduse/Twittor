@@ -17,8 +17,34 @@
 
     <link rel="manifest" href="manifest.json"/>  <!-- Sin slash porque estara en GitHub, en localHost hay que colocar: /webApp_MercaDo/ClasesFernando_PWA/06-twittor/ -->
     
-    <!-- Android theme color -->
+    <!-- ----------------------------------------- Atributos Android para PWA ----------------------------------------- -->
+    <!-- Color del tema -->
     <meta name="theme-color" content="#3498db">
+    <!-- ----------------------------------------- Atributos iOS para PWA ----------------------------------------- -->
+    <!-- Full screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- iconos -->
+    <link rel="apple-touch-icon" href="Manifest/icons/icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="Manifest/icons/icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Manifest/icons/icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="384x384" href="Manifest/icons/icon-384x384.png">
+    <!-- Splash screen -->
+    <!-- iPhone Xs Max (1242px x 2688px)
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" href="/apple-launch-1242x2688.png"> --> 
+    <!-- iPhone Xr (828px x 1792px) --> 
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" href="/apple-launch-828x1792.png">
+    <!-- iPhone X, Xs (1125px x 2436px) --> 
+    <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" href="Manifest/icons-ios/apple-launch-1125x2436.png">
+    <!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) --> 
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)" href="Manifest/icons-ios/apple-launch-1242x2208.png">
+    <!-- iPhone 8, 7, 6s, 6 (750px x 1334px) --> 
+    <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="Manifest/icons-ios/apple-launch-750x1334.png">
+    <!-- iPhone 5 (640px x 1136px) --> 
+    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="Manifest/icons-ios/apple-launch-640x1136.png">
+    <!-- StatusBar -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- ShortName -->
+    <meta name="apple-mobile-web-app-title" content="T W I T T O R">
 </head>
 <body>
         <!-- Titulo -->

@@ -11,6 +11,13 @@
     font-size: 16px;
     background-color: #dde1e2; 
     width: 100%;
+    
+    /* para que dispositivo Android no altere la PWA */
+    overscroll-behavior-y: contain;
+    /* para que dispositivo iOS no altere la PWA */
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
 }
 
 /* Personalizados */
